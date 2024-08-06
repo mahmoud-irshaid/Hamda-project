@@ -151,11 +151,8 @@ function validateForm(event) {
     alert("Invalid email format");
     return;
   }
-  sessionStorage.setItem("username", username);
-  sessionStorage.setItem("country", country);
-  sessionStorage.setItem("phone", phone);
-  sessionStorage.setItem("email", email);
-  window.location.href = "checkout.html";
+
+  // send user data to server
 }
 
 function validatePhone(phone) {

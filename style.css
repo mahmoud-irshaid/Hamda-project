@@ -287,9 +287,11 @@ html[lang="ar"] .main-heading1,
   display: flex;
   gap: 1.2rem;
 }
-html[lang="ar"] .dots-container {
-  right: unset;
-  left: 8%;
+@media screen and (min-width: 768px) {
+  html[lang="ar"] .dots-container {
+    right: unset;
+    left: 8%;
+  }
 }
 @media screen and (max-width: 768px) {
   .dots-container {
