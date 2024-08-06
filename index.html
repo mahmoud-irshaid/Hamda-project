@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hamda Makeup Masterclass</title>
+    <meta
+      name="description"
+      content="Register for our makeup class with Hamda. Whether you're a beginner or a pro."
+    />
+    <meta name="keywords" content="makeup, masterclass, Hamda" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="container header">
+      <nav class="nav">
+        <div class="logo">
+          <img src="/logo.svg" alt="logo" />
+        </div>
+        <button id="language-select">
+          <img src="/lang.svg" alt="language" />
+        </button>
+      </nav>
+    </header>
+
+    <section class="wrapper">
+      <div class="grid-cols-2">
+        <div class="grid-item-1">
+          <h1 class="main-heading1" data-i18n="title1">HAMDA MAKEUP</h1>
+          <h1 class="main-heading2" data-i18n="title2">MASTERCLASS</h1>
+          <h1 class="main-heading3" data-i18n="title3">HAS ARRIVED!</h1>
+          <hr class="solid" />
+          <p class="info-text" data-i18n="description">
+            For the first time, Hamda makeup artist invites you to experience
+            her masterclass.
+          </p>
+
+          <div class="btn_wrapper">
+            <button class="btn" id="openPopup" data-i18n="registerBtn">
+              <span>REGISTER NOW</span>
+            </button>
+          </div>
+          <p class="btn-label" data-i18n="limitedSeats">Limited seats.</p>
+          <div class="info-container">
+            <p data-i18n="locationDetails1">
+              Location: The Lana Hotel - Dorchester Collection
+            </p>
+            <p data-i18n="locationDetails2">Date: 26th August 2024</p>
+            <p data-i18n="locationDetails3">Time: 5:00 pm to 10:00 pm</p>
+          </div>
+        </div>
+        <div class="grid-item-2">
+          <div class="slider-container">
+            <div class="slider"></div>
+            <div class="dots-container"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <div class="form-header">
+          <h2 data-i18n="registerBtn">Register Now</h2>
+          <span class="close">&times;</span>
+        </div>
+        <p data-i18n="formHeader">
+          I will be sharing the secrets behind how I create some of my most
+          iconic looks, including tips and techniques.
+        </p>
+        <form id="registrationForm">
+          <label for="username" data-i18n="username">Username</label>
+          <input type="text" id="username" name="username" required />
+
+          <label for="country" data-i18n="country">Country</label>
+          <input type="text" id="country" name="country" required />
+
+          <label for="phone" data-i18n="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" required />
+
+          <label for="email" data-i18n="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <button type="submit" data-i18n="submit">Continue</button>
+        </form>
+      </div>
+    </div>
+    <script type="module" src="./main.js" defer></script>
+  </body>
+</html>
